@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Aktifo-A";
+  src: url("fonts/aktifoa-book.otf");
+}
+
+@font-face {
+  font-family: "Aktifo-A-Light";
+  src: url("fonts/aktifoa-light.otf");
+}
+
+@font-face {
+  font-family: "Aktifo-A-Medium";
+  src: url("fonts/aktifoa-medium.otf");
+}
+
+@font-face {
+  font-family: "Aktifo-A-Semibold";
+  src: url("fonts/aktifoa-semibold.otf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 8%;
+  background-image: url("images/banner image copy.png");
+  height: 100%;
+  max-height: 924px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-image {
+  width: 262px;
+  margin-top: 76px;
+  height: 88px;
+  background: transparent url("images/Asset 3@4x-8.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+}
+.hero-text {
+  width: 754px;
+  text-align: left;
+  padding-top: 131px;
+  font: normal normal normal 51px/64px "Aktifo-A";
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.hero-sub-text {
+  width: 527px;
+  text-align: left;
+  padding-top: 40px;
+  font: normal normal 300 34px/41px Aktifo-A-Light;
+  letter-spacing: 0px;
+  color: #292929;
+  opacity: 1;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #292929; /* Change to desired background color */
+  overflow: hidden;
+}
+
+.icon-row {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.icon-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-text {
+  text-align: center;
+  padding-top: 20px;
+  font: normal normal normal 20px/24px Aktifo-A;
+  letter-spacing: 0px;
+  color: #5d5d5d;
+  opacity: 1;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 8%;
+  background-image: url("images/Group\ 217.png");
+  height: 100%;
+  max-height: 924px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sec1-hero-text {
+  padding-top: 170px;
+  font: normal normal 600 51px/63px Aktifo-A-Semibold;
+  color: #131313;
+}
+
+.sec1-sub-text {
+  padding-top: 8px;
+  width: 853px;
+  height: 24px;
+  font: normal normal 300 20px/28px Aktifo-A-Light;
+  letter-spacing: 0px;
+  color: #131313;
+  opacity: 1;
+}
+
+.sub-heading {
+  padding-top: 40px;
+  padding-bottom: 22px;
+  width: 834px;
+  height: 24px;
+  font: normal normal 20px/28px Aktifo-A-Medium;
+  letter-spacing: 0px;
+  color: #131313;
+  opacity: 1;
+}
+
+.list-item {
+  width: 793px;
+  height: 53px;
+  font: normal normal 300 20px/28px Aktifo-A-Light;
+  letter-spacing: 0px;
+  color: #131313;
+  opacity: 1;
+}
+
+.list {
+  padding: 0;
+  margin-left: 15px;
+}
+
+li {
+  padding-bottom: 30px;
+}
+
+button {
+  margin-top: 40px;
+  background: #f26621 0% 0% no-repeat padding-box;
+  font: normal normal 600 30px/36px Aktifo-A-Semibold;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border-width: 0;
+  border-radius: 9px;
+  width: 359px;
+  height: 75px;
+}
+
+@media (max-width: 800px) {
+  .hero-text {
+    width: 500px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-text {
+    width: 300px;
+    font-size: 20px;
+  }
+}
