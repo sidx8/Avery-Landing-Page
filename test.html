@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animated Container</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/banner image copy.png");
+        height: 200vh; /* Just to provide enough scrolling space */
+      }
+      #container {
+        position: fixed;
+        top: 50vh; /* Initial position is in the center */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+        background: #f0f0f0;
+        padding: 20px;
+        transition: top 0.5s ease-out; /* Transition for smooth animation */
+      }
+
+      #content {
+        margin-top: 100vh; /* Content starts after the container's initial position */
+        padding: 50px;
+      }
+
+      .no-scroll {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">I'm a floating container!</div>
+    <div id="content">
+      <!-- Your page content goes here -->
+    </div>
+    <script>
+      window.addEventListener("scroll", function () {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop;
+        var container = document.getElementById("container");
+        var containerPosition = container.getBoundingClientRect().top;
+
+        if (containerPosition >= 0) {
+          var newTop = 50 - scroll / 20; // Adjust this number to control the speed of the container's movement
+          container.style.top = newTop + "vh"; // Move the container up or down
+        }
+
+        if (containerPosition <= 0) {
+          document.body.classList.add("no-scroll"); // Prevent scrolling when container reaches the top
+        } else {
+          document.body.classList.remove("no-scroll"); // Enable scrolling when container is not at the top
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -33,7 +33,7 @@ body {
   padding-left: 8%;
   background-image: url("images/banner image copy.png");
   height: 100%;
-  max-height: 924px;
+  max-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,16 +269,73 @@ button {
   color: #848484;
 }
 
-@media (max-width: 800px) {
-  .hero-text {
-    width: 500px;
-    font-size: 30px;
+/* The rest of your CSS code */
+
+@media screen and (max-width: 1024px) {
+  .hero-text,
+  .sec1-hero-text,
+  .sec2-hero-text {
+    font-size: 40px;
+    width: 90%;
+  }
+
+  .hero-sub-text,
+  .sec1-sub-text {
+    font-size: 25px;
+    width: 90%;
+  }
+
+  .icon-col {
+    margin-bottom: 20px;
+  }
+
+  .section1,
+  .section2 {
+    padding: 30px;
+  }
+
+  .section2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-icon {
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width: 500px) {
-  .hero-text {
-    width: 300px;
-    font-size: 20px;
+@media screen and (max-width: 768px) {
+  .hero-text,
+  .sec1-hero-text,
+  .sec2-hero-text {
+    font-size: 30px;
+  }
+
+  .hero-sub-text,
+  .sec1-sub-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text,
+  .sec1-hero-text,
+  .sec2-hero-text {
+    font-size: 25px;
+  }
+
+  .hero-sub-text,
+  .sec1-sub-text {
+    font-size: 16px;
   }
 }
